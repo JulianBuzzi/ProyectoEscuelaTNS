@@ -1,0 +1,29 @@
+.contenedor-de-imagenes-integrantes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.musico-banda{
+    border-radius: 10px;
+}
+
+.musico-banda:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.musico-banda img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 300px;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.musico-banda figure{
+    overflow: hidden;
+}
+
+.musico-banda:hover img{
+    transform: scale(1.2);
+}

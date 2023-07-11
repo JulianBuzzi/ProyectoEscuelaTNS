@@ -1,0 +1,16 @@
+.fecha-individual{
+    border-radius: 3px;
+    background-color: rgb(59, 84, 109);
+    font-family: Roboto;
+    color: black;
+    font-size: larger;
+    font-style: italic;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.fecha-individual:hover{
+    background-color: rgb(29, 65, 131);
+}
