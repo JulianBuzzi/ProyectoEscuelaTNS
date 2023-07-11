@@ -7,7 +7,7 @@
 }
 
 .contenedor-de-redes:hover{
-  background-color: rgba(4, 4, 5, 0.267);
+  background-color: rgba(0, 0, 0, 0.435);
 }
 
 .red-social{
@@ -20,7 +20,7 @@
 }
 
 .red-social img{
-  width: 80%;
+  width: 60%;
   object-fit: cover;
   margin-top: 75px;
   border-radius: 10px 10px 0 0;
@@ -54,7 +54,8 @@
 }
 
 .foto-logo{
+  width: 60%;
   align-items: center;
   justify-content: center;
-  margin-left: 40px;
+  margin-left: 74px;
 }

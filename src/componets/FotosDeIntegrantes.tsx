@@ -7,9 +7,9 @@ export const FotosDeIntegrantes: React.FC = (): JSX.Element => {
     <div className='contenedor-de-imagenes-integrantes'>
       {integrantes.map((musico) => (
         <div className='musico-banda' key={musico.id}>
-          <figure>
-            <img src={musico.urlImagen} alt={musico.nombre}/>
-            <p>{musico.nombre}</p>
+          <figure className='contenedor-datos-musico'>
+            <img className='foto-musico' src={musico.urlImagen} alt={musico.nombre}/>
+            <p className='nombre-musico'>{musico.nombre}</p>
           </figure>
         </div>
       ))}
