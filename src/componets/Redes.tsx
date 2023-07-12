@@ -1,11 +1,12 @@
 import { redes } from '../data/redes'
 import '../styles/Redes.css'
-import { BarraDeOpciones } from './BarraDeOpciones'
+import { NavBar } from './Navbar'
 
 export const Redes: React.FC = (): JSX.Element => {
   return (
     <>
-      <BarraDeOpciones />
+      {/* <BarraDeOpciones /> */}
+      <NavBar />
       <div className="contenedor-de-redes">
         {redes.map((red, i) => (
           <div className='red-social' key={i}>
