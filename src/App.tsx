@@ -6,18 +6,6 @@ import { useState } from 'react'
 import { Redes } from './components/Redes/Redes'
 import { Shop } from './components/shop/Shop'
 import { NavBar } from './components/Navbar/Navbar'
-// import { routes } from './data/routes'
-
-export const routes = [
-  {
-    path: '/',
-    Component: Home
-  },
-  {
-    path: '/proximas-fechas',
-    Component: ProximasFechas
-  }
-]
 
 const App = (): JSX.Element => {
   const [pagina, setPagina] = useState(() => {
@@ -25,6 +13,8 @@ const App = (): JSX.Element => {
     const page = pathname.slice(1)
     return page
   })
+
+  // Esto se puede resolver mejor con react router, pero los tutoriales que vi en youtube estaban desactualizados y no me funcionaba
 
   const irPagina = (): JSX.Element | undefined => {
     if (pagina === '') {
@@ -35,6 +25,8 @@ const App = (): JSX.Element => {
       return <Redes />
     } else if (pagina === 'shop') {
       return <Shop />
+    } else if (pagina === 'integrantes') {
+      return <Integrantes />
     }
   }
 

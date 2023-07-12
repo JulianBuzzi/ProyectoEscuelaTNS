@@ -12,7 +12,7 @@ export const Fecha: React.FC = (): JSX.Element => {
               <h3 className='horario-show'>Horario: {fecha.horario} HS</h3>
               <h3 className='precio-ticket'>Precio: ${fecha.precioEntrada}</h3>
               <button className='boton-tickets'>
-                <a href={fecha.urlAdquirirTickets}>Tickets</a>
+                <a href={fecha.urlAdquirirTickets}>Tickets</a> {/* Esto no me gusta, lo ideal seria que al clickear cualquier parte del botón me lleve al link */}
               </button>
             </figure>
           </div>
