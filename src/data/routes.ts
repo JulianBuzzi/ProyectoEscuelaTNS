@@ -1,5 +1,5 @@
-import { Home } from '../componets/Home'
-import { ProximasFechas } from '../componets/ProximasFechas'
+import { Home } from '../components/Home/Home'
+import { ProximasFechas } from '../components/Fechas/ProximasFechas'
 
 export const routes = [
   {

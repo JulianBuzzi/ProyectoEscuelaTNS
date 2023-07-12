@@ -1,6 +1,6 @@
 import React from 'react'
-import { integrantes } from '../data/data.ts'
-import '../styles/FotoDeIntegrantes.css'
+import { integrantes } from '../../data/data.ts'
+import '../../styles/FotoDeIntegrantes.css'
 
 export const FotosDeIntegrantes: React.FC = (): JSX.Element => {
   return (

@@ -1,6 +1,5 @@
-import ElmesLogo from '../images/ElmesLogo.png'
+import ElmesLogo from '../../images/ElmesLogo.png'
 import { FotosDeIntegrantes } from './FotosDeIntegrantes'
-import { NavBar } from './Navbar'
 
 export const Home: React.FC = (): JSX.Element => {
   return (
@@ -11,8 +10,6 @@ export const Home: React.FC = (): JSX.Element => {
           src={ElmesLogo}
           alt='LogoElmes' />
       </div>
-      {/* <BarraDeOpciones /> */}
-      <NavBar />
       <FotosDeIntegrantes />
       </div>
   </>

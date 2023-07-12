@@ -1,5 +1,5 @@
-import { fechas } from '../data/fechas'
-import '../styles/Fecha.css'
+import { fechas } from '../../data/fechas'
+import '../../styles/Fecha.css'
 
 export const Fecha: React.FC = (): JSX.Element => {
   return (
