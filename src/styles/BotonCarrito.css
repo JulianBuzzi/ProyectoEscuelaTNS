@@ -1,0 +1,13 @@
+.boton-carrito{
+  color: rgb(233, 227, 227);
+  background-color: rgb(17, 120, 229);
+  border-radius: 8px;
+  border: 1px solid rgb(205, 199, 199);
+  transform: translate(-145px, 95px);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+.boton-carrito:hover{
+  background-color: rgb(16, 74, 136);
+}

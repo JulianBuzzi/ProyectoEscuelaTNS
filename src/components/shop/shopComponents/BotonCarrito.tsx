@@ -1,9 +1,9 @@
-import { Button } from 'react-bootstrap'
+import '../../../styles/BotonCarrito.css'
 
 export const BotonCarrito: React.FC = (): JSX.Element => {
   return (
-    <Button>
-      hola
-    </Button>
+    <button className='boton-carrito'>
+      Añadir
+    </button>
   )
 }

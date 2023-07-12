@@ -12,8 +12,8 @@ export const ListaDeProductos: React.FC = (): JSX.Element => {
           </figure>
           <figure className='contenedor-info-producto'>
             <div className='info-producto'>
-              <h2>{producto.nombre}</h2>
-              <p>${producto.precio}</p>
+              <h4 className='nombre-producto'>{producto.nombre}</h4>
+              <p className='precio-producto'>${producto.precio}</p>
               <BotonCarrito />
             </div>
           </figure>
