@@ -42,3 +42,7 @@
   font-weight: 0;
   transform: translate(0px, -15px);
 }
+
+.texto-barra-superior{
+  transform: translate(990px, -24px);
+}
