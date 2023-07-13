@@ -22,7 +22,10 @@ export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JS
                 <p className='texto-cantidad-carrito'>{contadorProductos} productos en carrito</p>
               </header>
             </div>
-            <p className='texto-total-carrito'>Total: ${total}</p>
+            {total > 0
+              ? (<p className='texto-total-carrito'>Total: ${total}</p>)
+              : (<p className='texto-total-carrito'>Carrito Vacio</p>)
+            }
           </div>)
         : ('') // Esto no me gusta mucho, pero no se que se podria poner aca para que sea mejor
       }
