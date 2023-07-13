@@ -1,0 +1,43 @@
+.contenedor-principal-header{
+  background-color: rgb(187, 187, 187);
+  height: 25px;
+  border-radius: 4px 4px 0 0;
+}
+
+.icono-carrito{
+  transform: translate(1180px);
+  color: rgb(27, 26, 28);
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.icono-carrito:hover{
+  cursor: pointer;
+  color:black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.contenedor-principal-cartel-carrito{
+  background-color: rgb(187, 187, 187);
+  height: 50px;
+  width: 250px;
+  transform: translate(920px, -78px);
+  border-radius: 8px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.contenedor-principal-cartel-carrito:hover{
+  background-color: rgb(171, 165, 165);
+}
+
+.texto-cantidad-carrito{
+  text-align: center;
+  font-weight: 0;
+}
+
+.texto-total-carrito{
+  text-align: center;
+  font-weight: 0;
+  transform: translate(0px, -15px);
+}
