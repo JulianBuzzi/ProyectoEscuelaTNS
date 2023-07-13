@@ -2,7 +2,14 @@ import { productos } from '../../../data/productos'
 import { BotonCarrito } from './BotonCarrito'
 import '../../../styles/Shop.css'
 
-export const ListaDeProductos: React.FC = (): JSX.Element => {
+interface Props {
+  total: number
+  setTotal: React.Dispatch<React.SetStateAction<number>>
+  contadorProductos: number
+  setContadorProductos: React.Dispatch<React.SetStateAction<number>>
+}
+
+export const ListaDeProductos: React.FC<Props> = ({ total, setTotal, contadorProductos, setContadorProductos }: Props): JSX.Element => {
   return (
     <div className='contenedor-de-productos'>
       {productos.map((producto) => (
@@ -14,7 +21,7 @@ export const ListaDeProductos: React.FC = (): JSX.Element => {
             <div className='info-producto'>
               <h4 className='nombre-producto'>{producto.nombre}</h4>
               <p className='precio-producto'>${producto.precio}</p>
-              <BotonCarrito />
+              <BotonCarrito precio={producto.precio} total={total} setTotal={setTotal} contadorProductos={contadorProductos} setContadorProductos={setContadorProductos}/>
             </div>
           </figure>
         </div>

@@ -1,8 +1,17 @@
 import '../../../styles/BotonCarrito.css'
 
-export const BotonCarrito: React.FC = (): JSX.Element => {
-  const productoAgregado = (): undefined => {
-    console.log('añadido')
+interface Props {
+  precio: number
+  total: number
+  setTotal: React.Dispatch<React.SetStateAction<number>>
+  contadorProductos: number
+  setContadorProductos: React.Dispatch<React.SetStateAction<number>>
+}
+
+export const BotonCarrito: React.FC<Props> = ({ precio, total, setTotal, contadorProductos, setContadorProductos }: Props): JSX.Element => {
+  const productoAgregado = (): void => {
+    setTotal(total + precio)
+    setContadorProductos(contadorProductos + 1)
   }
 
   return (

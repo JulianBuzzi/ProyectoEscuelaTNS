@@ -23,7 +23,7 @@ export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JS
               </header>
             </div>
             {total > 0
-              ? (<p className='texto-total-carrito'>Total: ${total}</p>)
+              ? (<p className='texto-total-carrito'>Total: ${total}</p>) // Esto lo tengo que mejorar
               : (<p className='texto-total-carrito'>Carrito Vacio</p>)
             }
           </div>)
