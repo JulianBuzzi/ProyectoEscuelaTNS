@@ -14,15 +14,15 @@ export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JS
     <div className='contenedor-principal-header'>
       <div className='contenedor-carrito-compras'>
         <FaShoppingCart className='icono-carrito' onClick={() => { setActivo(!activo) }} />
-        <p className='texto-barra-superior'>Clickeá para ver tu carrito</p>
       </div>
+      <p className='texto-barra-superior'>Clickeá para ver tu carrito</p>
       {activo
         ? (<div className='contenedor-principal-cartel-carrito'>
             <div className='contenedor-cartel-carrito' >
               <header className='cartel-carrito'>
                 {contadorProductos >= 0
                   ? (<p className='texto-cantidad-carrito'>{contadorProductos} productos en carrito</p>)
-                  : (<p className='texto-cantidad-carrito'>{contadorProductos} productos en carrito</p>)
+                  : (<p className='texto-cantidad-carrito'>0 productos en carrito</p>)
                 }
               </header>
             </div>
