@@ -8,8 +8,15 @@ export const Shop: React.FC = (): JSX.Element => {
 
   return (
     <>
-      <Header total={total} contadorProductos={contadorProductos} />
-      <ListaDeProductos total={total} setTotal={setTotal} contadorProductos={contadorProductos} setContadorProductos={setContadorProductos}/>
+      <Header
+      total={total}
+      contadorProductos={contadorProductos} />
+      <ListaDeProductos
+      total={total}
+      setTotal={setTotal}
+      contadorProductos={contadorProductos}
+      setContadorProductos={setContadorProductos}
+      />
     </>
   )
 }

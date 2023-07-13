@@ -21,7 +21,22 @@ export const ListaDeProductos: React.FC<Props> = ({ total, setTotal, contadorPro
             <div className='info-producto'>
               <h4 className='nombre-producto'>{producto.nombre}</h4>
               <p className='precio-producto'>${producto.precio}</p>
-              <BotonCarrito precio={producto.precio} total={total} setTotal={setTotal} contadorProductos={contadorProductos} setContadorProductos={setContadorProductos}/>
+              <BotonCarrito
+              esAgregar={true} // Si es true, es boton de agregar, si es false es boton de eliminar producto
+              producto={producto}
+              total={total}
+              setTotal={setTotal}
+              contadorProductos={contadorProductos}
+              setContadorProductos={setContadorProductos}
+              />
+              <BotonCarrito
+              esAgregar={false} // Si es true, es boton de agregar, si es false es boton de eliminar producto
+              producto={producto}
+              total={total}
+              setTotal={setTotal}
+              contadorProductos={contadorProductos}
+              setContadorProductos={setContadorProductos}
+              />
             </div>
           </figure>
         </div>

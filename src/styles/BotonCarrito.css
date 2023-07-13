@@ -13,3 +13,19 @@
   color: rgb(229, 225, 225);
   border: 1px solid rgb(220, 213, 213);
 }
+
+.boton-carrito-eliminar{
+  color: rgb(0, 0, 0);
+  background-color: rgb(190, 193, 197);
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  transform: translate(-145px, 98px);
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+
+.boton-carrito-eliminar:hover{
+  background-color: rgba(155, 20, 20, 0.706);
+  color: rgb(229, 225, 225);
+  border: 1px solid rgb(220, 213, 213);
+}

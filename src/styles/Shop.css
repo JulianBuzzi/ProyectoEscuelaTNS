@@ -1,7 +1,7 @@
 .contenedor-de-productos{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 360px;
+  height: 370px;
   gap: 80px;
   transition-property: background-color;
   transition-duration: 0.3ms;

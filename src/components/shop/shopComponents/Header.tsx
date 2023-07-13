@@ -19,7 +19,10 @@ export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JS
         ? (<div className='contenedor-principal-cartel-carrito'>
             <div className='contenedor-cartel-carrito'>
               <header className='cartel-carrito'>
-                <p className='texto-cantidad-carrito'>{contadorProductos} productos en carrito</p>
+                {contadorProductos >= 0
+                  ? (<p className='texto-cantidad-carrito'>{contadorProductos} productos en carrito</p>)
+                  : (<p className='texto-cantidad-carrito'>{contadorProductos} productos en carrito</p>)
+                }
               </header>
             </div>
             {total > 0
