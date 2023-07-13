@@ -25,6 +25,7 @@
   border-radius: 8px;
   transition-property: background-color;
   transition-duration: 0.2s;
+  box-shadow: 0cap;
 }
 
 .contenedor-principal-cartel-carrito:hover{

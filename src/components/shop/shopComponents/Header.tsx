@@ -15,19 +15,17 @@ export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JS
       <div className='contenedor-carrito-compras'>
         <FaShoppingCart className='icono-carrito' onClick={() => { setActivo(!activo) }} />
       </div>
-      <div className='contenedor-principal-cartel-carrito'>
       {activo
-        ? (<div className='contenedor-cartel-carrito'>
-            <header className='cartel-carrito'>
-              <p className='texto-cantidad-carrito'>Usted tiene {contadorProductos} productos en carrito</p>
-            </header>
+        ? (<div className='contenedor-principal-cartel-carrito'>
+            <div className='contenedor-cartel-carrito'>
+              <header className='cartel-carrito'>
+                <p className='texto-cantidad-carrito'>{contadorProductos} productos en carrito</p>
+              </header>
+            </div>
+            <p className='texto-total-carrito'>Total: ${total}</p>
           </div>)
-        : (<div>
-            <p className='texto-cantidad-carrito'>Carrito Vacio</p>
-          </div>)
+        : ('') // Esto no me gusta mucho, pero no se que se podria poner aca para que sea mejor
       }
-      <p className='texto-total-carrito'>Total: ${total}</p>
-      </div>
     </div>
   )
 }

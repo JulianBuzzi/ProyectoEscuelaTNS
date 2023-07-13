@@ -9,7 +9,7 @@ export const Shop: React.FC = (): JSX.Element => {
 
   return (
     <>
-      <Header total={10} contadorProductos={contadorProductos} />
+      <Header total={1231} contadorProductos={contadorProductos} />
       <ListaDeProductos />
     </>
   )
