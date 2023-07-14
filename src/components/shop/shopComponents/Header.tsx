@@ -27,7 +27,7 @@ export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JS
               </header>
             </div>
             {total > 0
-              ? (<p className='texto-total-carrito'>Total: ${total}</p>) // Esto lo tengo que mejorar
+              ? (<p className='texto-total-carrito'>Total: ${total.toFixed(2)}</p>) // Esto lo tengo que mejorar
               : (<p className='texto-total-carrito'>Carrito Vacio</p>)
             }
           </div>)

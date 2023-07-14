@@ -3,7 +3,7 @@ import '../../../styles/BotonCarrito.css'
 interface Props {
   esAgregar: boolean
   producto: {
-    precio: number
+    price: number
     cantidad: number
   }
   total: number
@@ -14,14 +14,14 @@ interface Props {
 
 export const BotonCarrito: React.FC<Props> = ({ esAgregar, producto, total, setTotal, contadorProductos, setContadorProductos }: Props): JSX.Element => {
   const productoAgregado = (): void => {
-    setTotal(total + producto.precio)
+    setTotal(total + producto.price)
     setContadorProductos(contadorProductos + 1)
     producto.cantidad += 1
   }
 
   const productoEliminado = (): void => {
     if (producto.cantidad >= 1) {
-      setTotal(total - producto.precio)
+      setTotal(total - producto.price)
       setContadorProductos(contadorProductos - 1)
       producto.cantidad -= 1
     }
