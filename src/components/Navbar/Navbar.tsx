@@ -16,7 +16,7 @@ export const NavBar: React.FC = (): JSX.Element => {
             <Nav.Link href="#home">Novedades</Nav.Link>
             <Nav.Link href="/shop">Shop</Nav.Link>
             <NavDropdown title="Nosotros" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Integrantes</NavDropdown.Item>
+              <NavDropdown.Item href="/integrantes">Integrantes</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Discografía
               </NavDropdown.Item>

@@ -1,0 +1,40 @@
+.contenedor-principal-integrantes{
+  display: flex;
+  flex-direction: column;
+}
+
+.integrante{
+  margin-top: 40px;
+  border-radius: 5px;
+  display: flex;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.integrante:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.807);
+  background-color: rgba(0, 0, 0, 0.542);
+}
+
+.foto-integrante{
+  border-radius: 5px;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+.foto-integrante:hover{
+  transform: scale(1.2);
+}
+
+.nombre-integrante{
+  transform: translate(15px);
+  color: rgb(204, 209, 213);
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.status-integrante{
+  transform: translate(-250px, 70px);
+  text-align: justify;
+  color: rgb(204, 209, 213);
+}

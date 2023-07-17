@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { Redes } from './components/Redes/Redes'
 import { Shop } from './components/shop/Shop'
 import { NavBar } from './components/Navbar/Navbar'
+import { Integrantes } from './components/Integrantes/Integrantes'
 
 const App = (): JSX.Element => {
   const [pagina, setPagina] = useState(() => {
@@ -44,6 +45,7 @@ const App = (): JSX.Element => {
         <a href='/proximas-fechas' onClick={cambioPagina('proximas-fechas')} />
         <a href='/redes' onClick={cambioPagina('redes')} />
         <a href='/shop' onClick={cambioPagina('shop')} />
+        <a href='/integrantes' onClick={cambioPagina('integrantes')} />
       </header>
       {irPagina()}
     </>
