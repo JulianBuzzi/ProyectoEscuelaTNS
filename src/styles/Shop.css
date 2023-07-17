@@ -6,7 +6,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: auto;
-  gap: 80px;
+  gap: 20px;
+  padding: 20px;
   transition-property: background-color;
   transition-duration: 0.3ms;
   background-color: rgba(1, 1, 1, 0.635);
@@ -14,6 +15,7 @@
 
 
 .producto-item{
+  height: 500px;
   border-radius: 10px;
   display: flex;
   background-color: rgba(1, 1, 1, 0.635);
@@ -61,9 +63,13 @@
 .nombre-producto{
   position: absolute;
   color: white;
-  font-weight: 50;
+  font-size: 15px;
+  font-weight: lighter;
   font-family: Roboto;
-  transform: translate(-285px, 65px);
+  transform: translate(-260px, 68px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .precio-producto{
@@ -71,5 +77,5 @@
   color: white;
   font-weight: 50;
   font-family: Roboto;
-  transform: translate(-20px, 65px);
+  transform: translate(30px, 65px);
 }
