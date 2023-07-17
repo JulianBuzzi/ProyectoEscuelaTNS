@@ -1,19 +1,22 @@
 .contenedor-principal-integrantes{
   display: flex;
   flex-direction: column;
+  width: 1100px;
 }
 
 .integrante{
   margin-top: 40px;
   border-radius: 5px;
   display: flex;
-  transition-property: background-color;
+  transition-property: background-color, transform;
   transition-duration: 0.2s;
 }
 
 .integrante:hover{
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.807);
   background-color: rgba(0, 0, 0, 0.542);
+  transform: scale(1.2);
+
 }
 
 .foto-integrante{
