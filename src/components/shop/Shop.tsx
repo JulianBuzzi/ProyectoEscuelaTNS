@@ -7,7 +7,7 @@ export const Shop: React.FC = (): JSX.Element => {
   const [contadorProductos, setContadorProductos] = useState(0)
 
   return (
-    <>
+    <div className='contenedor-principal-toda-tienda'>
       <Header
       total={total}
       contadorProductos={contadorProductos} />
@@ -17,6 +17,6 @@ export const Shop: React.FC = (): JSX.Element => {
       contadorProductos={contadorProductos}
       setContadorProductos={setContadorProductos}
       />
-    </>
+    </div>
   )
 }
