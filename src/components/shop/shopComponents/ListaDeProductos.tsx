@@ -26,10 +26,14 @@ export const ListaDeProductos: React.FC<Props> = ({ total, setTotal, contadorPro
   }, [])
 
   const obtenerDatos = async (): Promise<void> => {
-    const data = await fetch('https://fakestoreapi.com/products')
-    const users: Producto[] = await data.json()
-    const productosConCantidadInicial = users.map((producto) => ({ ...producto, cantidad: 0 }))
-    setProductos(productosConCantidadInicial)
+    try {
+      const data = await fetch('https://fakestoreapi.com/products')
+      const users: Producto[] = await data.json()
+      const productosConCantidadInicial = users.map((producto) => ({ ...producto, cantidad: 0 }))
+      setProductos(productosConCantidadInicial)
+    } catch (error) {
+      alert('Se ha producido un error al cargar los productos')
+    }
   }
 
   return (
