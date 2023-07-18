@@ -24,7 +24,7 @@ export const Enrutador: React.FC<Props> = ({pagina}: Props): JSX.Element => {
     case 'integrantes':
       return <Integrantes />;
     case 'contacto':
-      return <Contacto />;
+      return <Contacto correoDestinatario='elmesok.com' urlDestinoBoton='formulario-correo' />;
     case 'formulario-correo':
         return <FormularioCorreo />
     default:
