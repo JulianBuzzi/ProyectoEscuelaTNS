@@ -1,7 +1,13 @@
 
+.contenedor-de-fechas{
+    margin-top: 40px;
+}
+
 .fecha-individual{
-    border-radius: 3px;
-    background-color: rgb(59, 84, 109);
+    width: 1100px;
+    
+    border-radius: 12px;
+    background-color: rgb(149, 154, 159);
     font-family: Roboto;
     color: black;
     font-size: larger;
@@ -13,16 +19,16 @@
 }
 
 .fecha-individual:hover{
-    background-color: rgb(29, 65, 131);
+    background-color: rgb(130, 166, 190);
 }
 
 .texto-fecha{
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .boton-tickets{
-    width: 30%;
+    width: 10%;
     color: rgb(0, 0, 0);
     background-color: rgb(190, 193, 197);
     border-radius: 8px;
@@ -33,13 +39,9 @@
 }
   
 .boton-tickets:hover{
-    background-color: rgba(0, 0, 0, 0.706);
+    background-color: rgba(0, 0, 0, 0.863);
     color: rgb(229, 225, 225);
     border: 1px solid rgb(220, 213, 213);
-}
-
-.contenedor-de-fechas{
-    margin-top: 40px;
 }
 
 .horario-show{

@@ -5,7 +5,7 @@
 }
 
 .integrante{
-  margin-top: 40px;
+  margin-top: 65px;
   border-radius: 5px;
   display: flex;
   transition-property: background-color, transform;
@@ -17,6 +17,10 @@
   background-color: rgba(0, 0, 0, 0.542);
   transform: scale(1.2);
 
+}
+
+.integrante:hover + .nombre-integrante{
+  color: rgb(17, 133, 229);
 }
 
 .foto-integrante{
