@@ -2,4 +2,9 @@
   width: 40px;
   height: 40px;
   transform: translate(1200px);
+  transition: filter 0.2s ease; /* Agregamos una transición suave al efecto */
+}
+
+.logo-elmes:hover {
+  filter: drop-shadow(0 0 5px #646cffea);
 }

@@ -20,7 +20,7 @@ export const NavBar: React.FC = (): JSX.Element => {
             <NavDropdown title="Nosotros" id="basic-nav-dropdown">
               <NavDropdown.Item href="/integrantes">Integrantes</NavDropdown.Item>
               <NavDropdown.Item href="/redes">Redes</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/actd">
                 Contacto
               </NavDropdown.Item>
             </NavDropdown>

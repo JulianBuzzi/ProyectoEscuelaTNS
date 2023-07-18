@@ -8,12 +8,13 @@ interface Integrante {
   id: number
   nombre: string
   urlImagen: string
+  urlRedSocial?: string
 }
 
 export const integrantes: Integrante[] = [
-  { id: 1, nombre: 'Nicolas', urlImagen: imagenNico },
-  { id: 2, nombre: 'Javier', urlImagen: imagenJavi },
-  { id: 3, nombre: 'Mella', urlImagen: imagenMella },
-  { id: 4, nombre: 'Martin', urlImagen: imagenTincho },
-  { id: 5, nombre: 'Julian', urlImagen: imagenJuli }
+  { id: 1, nombre: 'Nicolás Buzzi', urlImagen: imagenNico, urlRedSocial: 'https://www.instagram.com/buzzinico/' },
+  { id: 2, nombre: 'Javier Genario', urlImagen: imagenJavi, urlRedSocial: 'https://www.instagram.com/javiergenario/' },
+  { id: 3, nombre: 'Sebastián Mella', urlImagen: imagenMella, urlRedSocial: 'https://www.instagram.com/elme_llita/' },
+  { id: 4, nombre: 'Martin Romito', urlImagen: imagenTincho, urlRedSocial: 'https://www.instagram.com/martinromito/' },
+  { id: 5, nombre: 'Julián Buzzi', urlImagen: imagenJuli }
 ]

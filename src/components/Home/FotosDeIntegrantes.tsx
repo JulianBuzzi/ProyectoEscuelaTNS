@@ -9,7 +9,7 @@ export const FotosDeIntegrantes: React.FC = (): JSX.Element => {
         <div className='musico-banda' key={musico.id}>
           <figure className='contenedor-datos-musico'>
             <img className='foto-musico' src={musico.urlImagen} alt={musico.nombre}/>
-            <p className='nombre-musico'>{musico.nombre}</p>
+            <a className='nombre-musico' href={musico.urlRedSocial}>{musico.nombre}</a>
           </figure>
         </div>
       ))}
