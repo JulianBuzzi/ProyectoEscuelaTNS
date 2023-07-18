@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../../styles/Contacto.css'
 
 export const Contacto: React.FC = () => {
-  const [mostrarForm, setMostrarForm] = useState(false)
+  const [mostrarForm, setMostrarForm] = useState<boolean>(false)
   
   return (
     <div className='contenedor-principal-contacto'>
