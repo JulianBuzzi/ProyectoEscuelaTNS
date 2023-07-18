@@ -18,7 +18,7 @@ const App = (): JSX.Element => {
         return <Home />;
       case 'proximas-fechas':
         return <ProximasFechas />;
-      case 'res':
+      case 'redes':
         return <Redes />;
       case 'shop':
         return <Shop />;
@@ -32,9 +32,7 @@ const App = (): JSX.Element => {
 
   return (
     <>
-      <header>
-        <NavBar />
-      </header>
+      <NavBar />
       {irPagina()}
     </>
   );

@@ -1,0 +1,23 @@
+.contenedor-error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartel-error{
+  font-family: Roboto;
+  color: white;
+}
+
+.link-inicio{
+  color: rgb(212, 212, 212);
+  text-align: center;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+.link-inicio:hover{
+  color: rgb(64, 113, 236);
+}

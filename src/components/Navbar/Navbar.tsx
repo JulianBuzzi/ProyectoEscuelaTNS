@@ -3,10 +3,13 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import React from 'react'
+import logoElmes from '../../images/ElmesLogo.png'
+import './Navbar.css'
 
 export const NavBar: React.FC = (): JSX.Element => {
   return (
     <Navbar expand="lg" bg='dark' data-bs-theme="dark" className="bg-body-tertiary fixed-top">
+        <img className='logo-elmes' src={logoElmes} alt='logo-de-elmes' />
       <Container>
         <Navbar.Brand href="/">Inicio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

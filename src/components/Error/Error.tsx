@@ -1,8 +1,10 @@
+import '../../styles/Error.css'
+
 export const Error: React.FC = (): JSX.Element => {
   return (
-    <div>
-      <h1>Lo sentimos, ha ocurrido un error...</h1>
-      <a href='/'>Volver a inicio.</a>
+    <div className='contenedor-error'>
+      <h1 className='cartel-error'>Lo sentimos, ha ocurrido un error...</h1>
+      <a className='link-inicio' href='/'>Volver a inicio.</a>
     </div>
   )
 }
