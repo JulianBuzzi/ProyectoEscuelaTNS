@@ -12,7 +12,7 @@ const App = (): JSX.Element => {
   const { pathname } = window.location;
   let pagina = pathname.slice(1).toLowerCase(); 
 
-  const irPagina = (pagina: string): React.ReactNode => {
+  const irPagina = (): React.ReactNode => {
     switch (pagina) {
       case '':
         return <Home />;
@@ -35,7 +35,7 @@ const App = (): JSX.Element => {
       <header>
         <NavBar />
       </header>
-      {irPagina(pagina)}
+      {irPagina()}
     </>
   );
 };
