@@ -6,6 +6,6 @@ export const LogoElmes: React.FC = (): JSX.Element => {
       <img className='logo'
         src={ElmesLogo}
         alt='LogoElmes' />
-      </div>
+    </div>
   )
 }

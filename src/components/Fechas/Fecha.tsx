@@ -1,7 +1,35 @@
-import { fechas } from '../../data/fechas'
+// import { fechas } from '../../data/fechas'
 import '../../styles/Fecha.css'
+import { useState, useEffect } from 'react'
+
+interface Fechas {
+  fecha: string
+  lugar: string
+  horario: number
+  precioEntrada: number
+  urlAdquirirTickets: string // Cuando el usuario da click en el botón ticket se lo redirecciona con este url al sitio donde puede adquirir tickets
+}
 
 export const Fecha: React.FC = (): JSX.Element => {
+  const [fechas, setFechas] = useState<Fechas[]>([])
+
+  useEffect(() => {
+    void obtenerDatos()
+  }, [])
+
+  const obtenerDatos = async (): Promise<void> => {
+    try {
+      const data = await fetch('http://localhost:5173/src/data/fechas.json')
+      const fechas: Fechas[] = await data.json()
+      setFechas(fechas)
+      console.log('Si')
+    } catch (error) {
+      alert('Se ha producido un error al cargar las fechas')
+      console.log('No')
+      
+    }
+  }
+  
   return (
     <div className="contenedor-de-fechas">
       {fechas.map((fecha, index) => {

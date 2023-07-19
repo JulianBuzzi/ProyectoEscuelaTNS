@@ -1,0 +1,20 @@
+[
+  { "fecha": "15 de Julio", 
+  "lugar": "Teatro Trinidad Guevara",
+  "horario": "21", 
+  "precioEntrada": "2500", 
+  "urlAdquirirTickets": "https://www.ticketportal.com.ar/" 
+  },
+  { "fecha": "11 de Agosto", 
+  "lugar": "La Caverna de Elme", 
+  "horario": "23", 
+  "precioEntrada": "3000", 
+  "urlAdquirirTickets": "https://www.ticketek.com.ar/" 
+  },
+  { "fecha": "22 de Noviembre", 
+  "lugar": "Parador 5", 
+  "horario": "19", 
+  "precioEntrada": "1800", 
+  "urlAdquirirTickets": "https://www.ticketek.com.ar/" 
+  }
+]
