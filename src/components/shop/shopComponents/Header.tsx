@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JSX.Element => {
-  const [activo, setActivo] = useState(false)
+  const [activo, setActivo] = useState<boolean>(false)
 
   return (
     <div className='contenedor-principal-header'>

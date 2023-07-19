@@ -5,8 +5,8 @@ export const Home: React.FC = (): JSX.Element => {
   return (
     <>
         <div className='container'>
-        <LogoElmes />
-        <FotosDeIntegrantes />
+          <LogoElmes />
+          <FotosDeIntegrantes />
         </div>
     </>
   )

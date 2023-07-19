@@ -22,11 +22,8 @@ export const Fecha: React.FC = (): JSX.Element => {
       const data = await fetch('http://localhost:5173/src/data/fechas.json')
       const fechas: Fechas[] = await data.json()
       setFechas(fechas)
-      console.log('Si')
     } catch (error) {
       alert('Se ha producido un error al cargar las fechas')
-      console.log('No')
-      
     }
   }
   

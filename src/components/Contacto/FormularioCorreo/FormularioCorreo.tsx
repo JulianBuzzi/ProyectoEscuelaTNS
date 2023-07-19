@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../../../styles/FormularioCorreo.css'
 
+
+//Utilizo emailjs para este componente, que permite al usuario enviar un correo a la banda (El mensaje llega a mi correo personal)
 export const FormularioCorreo: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
 
@@ -11,7 +13,7 @@ export const FormularioCorreo: React.FC = () => {
     if (form.current){
       emailjs.sendForm('service_yg8098h', 'template_r9q3t3n', form.current, '1tuiM9-4n-FZpi65L')
       .then((result) => {
-          console.log(result.text);
+          console.log(result.text); // Deberia poner una alerta o un cartel que indique que el correo se envió de forma exitosa
       }, (error) => {
           alert(`Error:${error.text}`);
       });
