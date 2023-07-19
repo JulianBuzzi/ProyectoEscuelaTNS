@@ -20,11 +20,11 @@ export const FormularioCorreo: React.FC = () => {
 
   return (
     <div className="contenedor-principal-formulario-correo">
-      <form ref={form} onSubmit={sendEmail}>
-        <input placeholder="Ingrese usuario" type="text" name="user_name" />
-        <input placeholder="Ingrese email" type="email" name="user_email" />
-        <textarea placeholder='Ingrese mensaje' name="message" />
-        <input type="submit" value="Enviar" />
+      <form className="contenedor-formulario" ref={form} onSubmit={sendEmail}>
+        <input className="cartel-usuario" placeholder="Ingrese usuario" type="text" name="user_name" />
+        <input className="cartel-email" placeholder="Ingrese email" type="email" name="user_email" />
+        <textarea className="cartel-mensaje" placeholder='Ingrese mensaje' name="message" />
+        <input  className="boton-envio" type="submit" value="Enviar" />
       </form>
     </div>
   )
