@@ -1,0 +1,102 @@
+/* Estilos generales para la paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Estilos para los botones de paginación "Previous" y "Next" */
+.pagination-previous,
+.pagination-next {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* Eliminamos el subrayado */
+}
+
+.pagination-previous:hover,
+.pagination-next:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Estilos para los números de páginas */
+.pagination-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-link {
+  background-color: #fff;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #000;
+  text-decoration: none; /* Eliminamos el subrayado */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Estilos para la página actual */
+.pagination-link.is-current {
+  background-color: #000;
+  color: #fff;
+  cursor: default;
+}
+
+/* Estilos para el botón de página actual */
+.pagination-link.is-current::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos para el botón de página anterior o siguiente cuando están deshabilitados */
+.pagination-previous.is-disabled,
+.pagination-next.is-disabled{
+  background-color: #2b2929;
+  color: #9a9a9a;
+  cursor: not-allowed;
+}
+
+/* Vista horizontal personalizada */
+.pagination-previous {
+  order: 1;
+  position: absolute;
+  left: 25px;
+}
+
+.pagination-link[aria-label="Goto page 1"] {
+  order: 2;
+}
+
+.pagination-link[aria-label="Page 46"] {
+  order: 3;
+}
+
+.pagination-next {
+  order: 4;
+  position: absolute;
+  right: 25px;
+}
+
