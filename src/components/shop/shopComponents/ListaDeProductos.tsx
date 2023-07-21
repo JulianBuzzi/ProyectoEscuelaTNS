@@ -3,6 +3,7 @@ import { BotonCarrito } from './BotonCarrito'
 import '../../../styles/Shop.css'
 import { useState, useEffect } from 'react'
 import { Paginacion } from './Paginacion'
+import { Header } from './Header'
 
 interface Props {
   total: number
@@ -19,10 +20,12 @@ interface Producto {
   cantidad: number
 }
 
-export const ListaDeProductos: React.FC<Props> = ({ total, setTotal, contadorProductos, setContadorProductos}: Props): JSX.Element => {
+export const ListaDeProductos: React.FC<Props> = ({ total, setTotal, contadorProductos, setContadorProductos }: Props): JSX.Element => {
   const [productos, setProductos] = useState<Producto[]>([])
   const [paginaActual, setPaginaActual] = useState<number>(1)
   const [productosPorPagina, setProductosPorPagina] = useState<number>(5)
+  
+  
   const ultimoProductoPagina = productosPorPagina * paginaActual //Operación aritmética que determina el último producto del array de productos que se muestra en la pagina
   const primerProductoPagina = ultimoProductoPagina - productosPorPagina //Determina el primer producto del array de productos que se muestra en la página
 
@@ -43,6 +46,13 @@ export const ListaDeProductos: React.FC<Props> = ({ total, setTotal, contadorPro
 
   return (
     <>
+      <Header
+      total={total}
+      contadorProductos={contadorProductos}
+      productosPorPagina={productosPorPagina}
+      setProductosPorPagina={setProductosPorPagina}
+      totalProductos={productos.length}
+      />
       <div className='contenedor-de-productos'>
         {productos.map((producto) => (
           <div className='producto-item' key={producto.id}>

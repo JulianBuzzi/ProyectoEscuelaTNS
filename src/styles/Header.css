@@ -22,7 +22,7 @@
   background-color: rgb(187, 187, 187);
   height: 50px;
   width: 250px;
-  transform: translate(920px, -118px);
+  transform: translate(920px, -168px);
   border-radius: 8px;
   transition-property: background-color;
   transition-duration: 0.2s;
@@ -45,6 +45,27 @@
 }
 
 .texto-barra-superior{
-  transform: translate(988px, -23px);
+  transform: translate(988px, -72px);
   width: 180px;
+}
+
+.contenedor-filtro-cantidad-productos{
+
+  width: 300px;
+  transform: translate(5px, -80px);
+}
+
+.texto-cantidad-prod{
+  transform: translate(25px);
+  color: rgb(225, 221, 221);
+}
+
+.barra-cantidad{
+  transform: translate(65px);
+}
+
+.cant-prod-en-pantalla{
+  position: absolute;
+  transform: translate(70px, -3px);
+  color: rgb(225, 221, 221);
 }

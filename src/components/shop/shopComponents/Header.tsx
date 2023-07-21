@@ -5,10 +5,18 @@ import '../../../styles/Header.css'
 interface Props {
   total: number
   contadorProductos: number
+  setProductosPorPagina: React.Dispatch<React.SetStateAction<number>>
+  totalProductos: number
+  productosPorPagina: number
 }
 
-export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JSX.Element => {
+export const Header: React.FC<Props> = ({ total, contadorProductos, setProductosPorPagina, totalProductos, productosPorPagina }: Props): JSX.Element => {
   const [activo, setActivo] = useState<boolean>(false)
+
+  const handleCantProdInPage = (e: React.ChangeEvent<HTMLInputElement>):  void => {
+    const value = parseInt(e.target.value)
+    setProductosPorPagina(value)
+  }
 
   return (
     <div className='contenedor-principal-header'>
@@ -16,7 +24,9 @@ export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JS
         <FaShoppingCart className='icono-carrito' onClick={() => { setActivo(!activo) }} />
       </div>
       <div className='contenedor-filtro-cantidad-productos'>
-        
+        <label className='texto-cantidad-prod'>Cantidad de Productos por página</label>
+        <input className='barra-cantidad' type='range' id='cantProd' min={1} max={totalProductos} onChange={handleCantProdInPage} />
+        <span className='cant-prod-en-pantalla'>{productosPorPagina}</span>
       </div>
       <p className='texto-barra-superior'>Clickeá para ver tu carrito</p>
       {activo
