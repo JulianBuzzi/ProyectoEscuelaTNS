@@ -23,8 +23,8 @@ export const ListaDeProductos: React.FC<Props> = ({ total, setTotal, contadorPro
   const [productos, setProductos] = useState<Producto[]>([])
   const [paginaActual, setPaginaActual] = useState<number>(1)
   const [productosPorPagina, setProductosPorPagina] = useState<number>(5)
-  const ultimoProductoPagina = productosPorPagina * paginaActual
-  const primerProductoPagina = ultimoProductoPagina - productosPorPagina 
+  const ultimoProductoPagina = productosPorPagina * paginaActual //Operación aritmética que determina el último producto del array de productos que se muestra en la pagina
+  const primerProductoPagina = ultimoProductoPagina - productosPorPagina //Determina el primer producto del array de productos que se muestra en la página
 
   useEffect(() => {
     void obtenerDatos()

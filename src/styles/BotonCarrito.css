@@ -24,8 +24,20 @@
   transition-duration: 0.3s;
 }
 
+.boton-carrito-eliminar.is-disabled{
+  background-color: #2b2929;
+  color: #9a9a9a;
+  cursor: not-allowed;
+}
+
 .boton-carrito-eliminar:hover{
   background-color: rgba(155, 20, 20, 0.706);
   color: rgb(229, 225, 225);
   border: 1px solid rgb(220, 213, 213);
+}
+
+.boton-carrito-eliminar.is-disabled:hover{
+  background-color: #2b2929;
+  color: #9a9a9a;
+  cursor: not-allowed;
 }

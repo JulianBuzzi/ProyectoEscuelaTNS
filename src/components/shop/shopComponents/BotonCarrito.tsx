@@ -31,7 +31,7 @@ export const BotonCarrito: React.FC<Props> = ({ esAgregar, producto, total, setT
     <>
       { esAgregar
         ? (<button className='boton-carrito' onClick={productoAgregado}>Añadir</button>)
-        : (<button className='boton-carrito-eliminar' onClick={productoEliminado}>Quitar</button>)
+        : (<button className={`boton-carrito-eliminar ${producto.cantidad <= 0 ? 'is-disabled' : ''}`} onClick={productoEliminado}>Quitar</button>)
       }
     </>
   )

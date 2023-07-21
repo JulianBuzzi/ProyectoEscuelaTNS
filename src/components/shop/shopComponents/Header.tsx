@@ -15,6 +15,9 @@ export const Header: React.FC<Props> = ({ total, contadorProductos }: Props): JS
       <div className='contenedor-carrito-compras'>
         <FaShoppingCart className='icono-carrito' onClick={() => { setActivo(!activo) }} />
       </div>
+      <div className='contenedor-filtro-cantidad-productos'>
+        
+      </div>
       <p className='texto-barra-superior'>Clickeá para ver tu carrito</p>
       {activo
         ? (<div className='contenedor-principal-cartel-carrito'>
