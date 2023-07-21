@@ -23,7 +23,7 @@ interface Producto {
 export const ListaDeProductos: React.FC<Props> = ({ total, setTotal, contadorProductos, setContadorProductos }: Props): JSX.Element => {
   const [productos, setProductos] = useState<Producto[]>([])
   const [paginaActual, setPaginaActual] = useState<number>(1)
-  const [productosPorPagina, setProductosPorPagina] = useState<number>(5)
+  const [productosPorPagina, setProductosPorPagina] = useState<number>(3)
   
   
   const ultimoProductoPagina = productosPorPagina * paginaActual //Operación aritmética que determina el último producto del array de productos que se muestra en la pagina

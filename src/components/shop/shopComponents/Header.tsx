@@ -25,7 +25,7 @@ export const Header: React.FC<Props> = ({ total, contadorProductos, setProductos
       </div>
       <div className='contenedor-filtro-cantidad-productos'>
         <label className='texto-cantidad-prod'>Cantidad de Productos por página</label>
-        <input className='barra-cantidad' type='range' id='cantProd' min={1} max={totalProductos} onChange={handleCantProdInPage} />
+        <input className='barra-cantidad' type='range' id='cantProd' min={3} max={totalProductos} onChange={handleCantProdInPage} />
         <span className='cant-prod-en-pantalla'>{productosPorPagina}</span>
       </div>
       <p className='texto-barra-superior'>Clickeá para ver tu carrito</p>
