@@ -30,15 +30,9 @@ export const BotonCarrito: React.FC<Props> = ({ esAgregar, producto, total, setT
   return (
     <>
       { esAgregar
-        ? (<button className='boton-carrito' onClick={productoAgregado}>
-              Añadir
-            </button>
-          )
-        : (<button className='boton-carrito-eliminar' onClick={productoEliminado}>
-            Quitar
-          </button>
-          )
-        }
+        ? (<button className='boton-carrito' onClick={productoAgregado}>Añadir</button>)
+        : (<button className='boton-carrito-eliminar' onClick={productoEliminado}>Quitar</button>)
+      }
     </>
   )
 }

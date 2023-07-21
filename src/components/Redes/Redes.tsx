@@ -5,8 +5,8 @@ export const Redes: React.FC = (): JSX.Element => {
   return (
     <>
       <div className="contenedor-de-redes">
-        {redes.map((red, i) => (
-          <div className='red-social' key={i}>
+        {redes.map((red, index) => (
+          <div className='red-social' key={index}>
             <figure>
               <img className='foto-logo' src={red.logo} alt={red.nombre}/>
               <p className='nombre-red'>{red.nombre}</p>
